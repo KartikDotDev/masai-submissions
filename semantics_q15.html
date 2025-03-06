@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <style>
+      body {
+        height: 100%;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main {
+        margin: 0% 15%;
+        overflow: hidden;
+      }
+      header {
+        background: linear-gradient(#2d0075, #00fdff);
+        padding: 10px; 
+      } 
+      nav {
+        flex: "row";
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px;
+      }
+      a:hover {
+        color: #2d0071;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid #ddd;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+      
+    </style>
+  </head>
+  <body>  
+    <header style="justify-items: center; color: #ffffff">
+      <h1>My Portfolio</h1>
+      <nav style="text-decoration: none;">
+        <a href="/">Home</a>
+        <a href="#about"?>About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main> 
+    <h2>Welcome to My Portfolio</h2>
+    <p>This Portfolio showcases my projects and provides information about my background and contact details.</p>
+    <h2>About</h2>
+    <p>Hello! I'm a web developer passionate about building dynamic and responsive websites. I enjoy creating user-friendly interfaces and working on challenging projects</p>
+    <h2>Projects</h2>
+    <table>
+      <tr style="background-color: #2d0071; color: #ffffff;">
+        <th>Project Name</th>
+        <th>Description</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>Project Alpha</td>
+        <td>A web-based tool for tracking project progress and managing tasks</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>Portfolio Site</td>
+        <td>A personal website showcasing my work and skills as a web developer</td>
+        <td>2024</td>
+      </tr>
+    </table>
+    <h2>Contact</h2>
+    <form method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name"> <br><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email"> <br><br>
+      <label for="message">Message:</label> <br><br>
+      <textarea rows="3" cols="26"></textarea><br><br>
+      <button type="submit" style="background: #ffffff; border: 1px solid #ddd; border-radius: 5px; box-shadow: 10px 5 px 5px #ddd;">Submit</button>
+    </form>
+    </main>
+    <div style="display: flex; flex-direction: column; min-height: 100vh;">
+    <footer style="background: linear-gradient(#2c0073, #185ca4); padding: 10px 0px; position: fixed ; bottom: 0; left: 0; width: 100%;">
+    </footer>
+  </body>
+</html>
