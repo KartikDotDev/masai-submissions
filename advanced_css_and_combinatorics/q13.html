@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive List with CSS Combinators</title>
+  <style>
+    ol li:first-child {
+      font-weight: bold;
+    }
+    ol li:first-child+li {
+      background-color: lightgray;
+    }
+    ol li:nth-child(3)~li {
+      font-style: italic;
+    }
+    ol li:hover {
+      color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Interactive List</h2>
+  <ol>
+    <li>First item (bold)</li>
+    <li>Second item (background color applied)</li>
+    <li>Third item</li>
+    <li>Fourth item (italicized)</li>
+    <li>Fifth item (italicized)</li>
+  </ol>
+</body>
+
+</html>

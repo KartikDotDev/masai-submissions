@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Navigation Bar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #222;
+      padding: 15px;
+    }
+
+    .nav-section {
+      margin-bottom: 10px;
+    }
+
+    .nav-section.section-1 a {
+      color: #ff5733;
+    }
+
+    .nav-section.section-2 a {
+      color: skyblue;
+    }
+
+    .nav-section.section-3 a {
+      color: green;
+    }
+
+    .nav-section>a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .navbar a:hover {
+      color: yellow;
+    }
+
+    .navbar a:active {
+      color: white;
+      background-color: black;
+      padding: 2px 5px;
+    }
+
+    .navbar a[href^="https"] {
+      color: #ff00ff !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-section section-1">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <div>
+        <a href="#">Team</a>
+      </div>
+    </div>
+
+    <div class="nav-section section-2">
+      <a href="#">Services</
