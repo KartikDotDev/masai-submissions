@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav style="display: flex; flex-direction: column;">
+        <div style="text-decoration: none;">
+          <a href="/">Home</a>
+          <a href="#add">Add Recipe</a>
+          <a href="#view">View Recipe</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" style="background-image: url(./assets/bg-image.jpg); height: 10%;">
+        <h1 style="color: white;">Welcome</h1>
+      </section>
+      <section id="view">
+        
+      </section>
+      <section id="add">
+        <form>
+          <label for="name">Recipe Name</label>
+          <input required type="text" name="name" placeholder="Enter the Recipe Name"><br>
+          <label for="ingredients">Ingredients</label>
+          <textarea required rows="5" cols="20" placeholder="Enter the ingredients here"></textarea> <br>
+          <label for="category">Category</label>
+          <select required>
+            <option value="Breakfast"></option>
+            <option value="Dinner"></option>
+            <option value="Lunch"></option>
+            <option value="Dessert"></option>
+            <option value="Drinks"></option>  
+          </select><br>
+          <label for="prepsteps">Preparation Steps</label>
+          <textarea rows="5" cols="20" placeholder="Add Preparation steps" required></textarea><br>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
