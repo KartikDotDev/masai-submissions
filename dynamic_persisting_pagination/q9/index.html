@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todos with Pagination</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .todo {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 8px;
+    }
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    button.active {
+      background: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todos List (Paginated)</h1>
+  <div id="todo-container"></div>
+  <div class="pagination" id="pagination-buttons"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
