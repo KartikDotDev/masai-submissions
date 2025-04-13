@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Notes - Collab Study Notes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">KollabNotes</a>
+      <nav class="main-nav">
+        <ul id="main-nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="create.html">Create Notes</a></li>
+          <li><a href="view.html" class="active">View Notes</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">Dark Mode</button>
+      <button id="hamburger-menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Your Study Notes</h2>
+
+    <section class="notes-controls">
+      <div>
+        <label for="filter-priority">Filter by Priority:</label>
+        <select id="filter-priority">
+          <option value="all">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div>
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by">
+          <option value="date_desc">Date (Newest First)</option>
+          <option value="date_asc">Date (Oldest First)</option>
+          <option value="priority">Priority (High First)</option>
+        </select>
+      </div>
+      <div>
+        <label for="search-bar">Search Title:</label>
+        <input type="search" id="search-bar" placeholder="Search by title...">
+      </div>
+    </section>
+
+    <section id="notes-display-area">
+      <p>Loading notes...</p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 KollabNotes by Kartikdotdev. All rights reserved.</p>
+      <p>Contact: kartikdotdev@gmail.com </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/localstorage.js"></script>
+  <script type="module" src="../assets/js/notes.js"></script>
+  <script src="../assets/js/darkmode.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
